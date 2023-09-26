@@ -1,0 +1,8 @@
+name: githubactions
+on: push
+jobs:
+  myfirstaction:
+    runs-on: ubuntu-latest
+    steps:
+      -  name: gitcheckout
+         uses: actions/checkout@v4
