@@ -6,3 +6,11 @@ jobs:
     steps:
       -  name: gitcheckout
          uses: actions/checkout@v4
+      -  name: nodejssetup
+         uses: actions/setup-node@v3
+         with:
+          node-version: 18
+      - name: install dependecies
+        run: npm ci
+      - name: run test
+        run: npm test
